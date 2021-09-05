@@ -1,0 +1,37 @@
+/* Change scroll header */
+.scroll-header{
+    background-color: var(--body-color);
+    box-shadow: 0 0 4px hsla(var(--hue-color), 64%, 15%, .15);
+}
+
+.scroll-header .nav__logo,
+.scroll-header .nav__toggle{
+    color: var(--first-color)
+}
+
+/*===== SCROLL UP =====*/
+.scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    background-color: var(--first-color);
+    padding: .5rem;
+    display: flex;
+    opacity: .9;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+
+    &:hover{
+        background-color: var(--first-color-alt);
+        opacity: 1;
+    }
+
+    &-icon{
+        color: var(--white-color);
+    }
+}
+
+/* Show croll*/
+.show-scroll{
+    bottom: 3rem;
+}
